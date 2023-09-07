@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+    /* Define the border properties */
+    border: 2px solid #000; /* 2px solid black border */
+    border-radius: 10px; /* Rounded corners */
+    
+    /* Define the background properties */
+/* Background color */
+    padding: 20px; /* Padding inside the container */
+  }
+  .container {
+    display: flex; /* Use flexbox to control alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position:static;
+    line height: 28px;
+    width: 1051px;
+    text-align:center;
+    
+  }
+  
+  .content {
+    /* Styles for the content inside the container */
+    text-align: center; /* Center text horizontally within the content */
+    padding: 20px; /* Optional: Add padding around the content */
+  }
+  .abc {
+    padding: 10px 20px; /* Add padding to the button */
+     /* Set the background color */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove the default button border */
+    border-radius: 50px; /*  /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    background-color: black;
+    transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+}
+
+/* Define the hover effect */
+.abc:hover {
+    background-color:grey; /* Change the background color on hover */
+}
+.bcd {
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: red; /* Set the background color */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove the default button border */
+    border-radius: 50px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+}
+
+/* Define the hover effect */
+.bcd:hover {
+    background-color:darkred; /* Change the background color on hover */
+}
+.just{
+
+}
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  table{
+	border-collapse:collapse;  
+}
+table tr td, th{
+	border:1px solid #ccc;
+  	padding:5px;
+    text:white;
+}
+table tr:hover{  
+    background: #f1f1f1;
+}
+body{
+    
+}
+
+
+  ::selection {
+      color: white;
+      background-color: green;
+  }
+
+  .button {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    height: 45px;
+    padding: 10px 20px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid;
+    color: #334b79;
+    z-index: 1;
+    transition: 0.5s all ease;
+  }
+
+  .button:hover {
+    color: white;
+    cursor: pointer;
+    border: 0px;
+  }
+
+  .button:active {
+    transform: scale(0.85);
+  }
+
+  .buttonr:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    top: -100%;
+    background: #379237;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+ .buttonr:hover:before {
+    top: 0;
+    left: 0;
+    border: 0px;
+    transform: rotate(180deg);
+  }
+
+  .buttonr:after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    top: 100%;
+    background: #54B435;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+
+  .buttonr:hover:after {
+    top: 0;
+    left: 50%;
+    border: 0px;
+    transform: rotate(180deg);
+  }
+  .follow {
+    padding: 10px 20px; /* Add padding to the button */
+     /* Set the background color */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove the default button border */
+    border-radius: 50px; /*  /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    background-color: black;
+    transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+}
+
+/* Define the hover effect */
+.follow:hover {
+    background-color:grey; /* Change the background color on hover */
+}
+.play {
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: red; /* Set the background color */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove the default button border */
+    border-radius: 50px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s; /* Add a smooth transition for the background color change */
+}
+
+/* Define the hover effect */
+.play:hover {
+    background-color:darkred; /* Change the background color on hover */
+}
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+
+}
+
+.float-child1 {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
+.float-child2{
+
+    width:75%;
+    float:right;
+
+}
+#content {
+    background: black;
+    color: black;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Adjust the width as needed */
+  height:100%;
+ width: 100%;
+}
+
+.row {
+  display: flex;flex-direction: column-reverse;
+  justify-content: space-between;
+  
+  height:25%;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  width:100%;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
